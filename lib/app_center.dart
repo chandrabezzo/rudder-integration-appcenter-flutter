@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import 'package:rudder_integration_appcenter_flutter/rudder_integration.dart';
+import 'package:rudder_sdk_flutter/rudder_sdk_flutter.dart';
 
 class AppCenter implements RudderIntegration {
   static const MethodChannel _channel = const MethodChannel('appcenter');
