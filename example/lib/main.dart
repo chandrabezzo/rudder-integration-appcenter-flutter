@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:rudder_sdk_flutter/RudderClient.dart';
 import 'package:rudder_sdk_flutter/RudderConfig.dart';
 import 'package:rudder_sdk_flutter/RudderLogger.dart';
-import 'package:rudder_sdk_flutter/RudderTraits.dart';
-import 'package:rudder_sdk_flutter/RudderOption.dart';
-import 'package:rudder_sdk_flutter/RudderProperty.dart';
 import 'package:rudder_integration_appcenter_flutter/Appcenter.dart';
 
 class PlatformChannel extends StatefulWidget {
@@ -436,7 +433,7 @@ class _PlatformChannelState extends State<PlatformChannel> {
 
     // RudderClient.alias("new_desu_11", options: options);
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -450,7 +447,7 @@ class _PlatformChannelState extends State<PlatformChannel> {
                 RudderConfigBuilder builder = RudderConfigBuilder();
                 builder.withDataPlaneUrl("https://07e09524dd76.ngrok.io");
                 builder.withControlPlaneUrl("https://api.rudderlabs.com");
-                builder.withLogLevel(RudderLogger.VERBOSE);
+                builder.withLogLevel(RudderLogger.verbose);
                 builder.withTrackLifecycleEvents(false);
                 builder.withFactory(Appcenter());
                 RudderClient.getInstance("1s4DeDeXs3hi1Z4BUIxwNddTlkN",
