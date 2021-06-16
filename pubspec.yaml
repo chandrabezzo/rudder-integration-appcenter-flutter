@@ -1,9 +1,8 @@
 name: rudder_integration_appcenter_flutter
 description: RudderStack's Flutter Implementation for Visual Studio App Center.
-version: 1.0.0
+version: 2.0.0
 author: Desu Sai Venkat 
 homepage: https://github.com/rudderlabs/rudder-integration-appcenter-flutter
-publish_to: 'none'
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -12,8 +11,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  rudder_sdk_flutter:
-    path: ../rudder-sdk-flutter
   pedantic: ^1.11.0
 
 dev_dependencies:
