@@ -12,18 +12,17 @@ dependencies:
   flutter:
     sdk: flutter
 
-  rudder_integration_appcenter_flutter:
-    # When depending on this package from a real application you should use:
-    #   appcenter: ^x.y.z
-    # See https://dart.dev/tools/pub/dependencies#version-constraints
-    # The example app is bundled with the plugin so we use a path dependency on
-    # the parent directory to use the current plugin's version.
-    path: ../
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  rudder_sdk_flutter: ^1.0.1
+  rudder_sdk_flutter:
+    git: 
+      url: https://github.com/chandrabezzo/rudder-sdk-flutter
+      ref: support/null-safety
+  rudder_integration_appcenter_flutter:
+    git:
+      url: https://github.com/chandrabezzo/rudder-integration-appcenter-flutter
+      ref: support/null-safety
 
 dev_dependencies:
   flutter_test:
